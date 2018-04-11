@@ -30,9 +30,10 @@
     "email"
   ],
   "dependencies": {
+    "bluebird": "^3.5.1",
     "lodash.merge": "^3.3.2",
     "request": "^2.61.0",
-    "rsvp": "^3.2.1"
+    "request-debug": "^0.2.0"
   },
   "license": "ISC"
 }

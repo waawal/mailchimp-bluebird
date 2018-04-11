@@ -1,12 +1,13 @@
 import request from 'request';
 import merge from 'lodash.merge';
-import rsvp from 'rsvp';
+import Promise from 'bluebird';
 
 export default class API {
-  constructor({datacenter, key, version} = {}) {
+  constructor({datacenter, key, version, debug} = {}) {
     if (!key) { throw new Error('Mailchimp API Key Required'); }
     if (!datacenter) { throw new Error('Mailchimp DataCenter Required'); }
     if (!version) { throw new Error('Mailchimp Version Required'); }
+    if (debug) { require('request-debug')(request); }
 
     this.key = key;
     this.datacenter = datacenter;
@@ -26,7 +27,7 @@ export default class API {
 
     if (data) { requestOptions.json = true; }
 
-    return new rsvp.Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       request(requestOptions, (err, res, body) => {
         if (err) {
           return reject(err);
