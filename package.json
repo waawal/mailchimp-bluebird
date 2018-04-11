@@ -1,10 +1,10 @@
 {
-  "name": "mailchimp-lite",
-  "description": "A lightweight wrapper for Mailchimp's v2 and v3 apis",
+  "name": "mailchimp-bluebird",
+  "description": "mailchimp-lite fork with enhancements and rsvp switched out for Bluebird",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NickTomlin/mailchimp-lite.git"
+    "url": "https://github.com/waawal/mailchimp-bluebird.git"
   },
   "scripts": {
     "prepublish": "npm run build",

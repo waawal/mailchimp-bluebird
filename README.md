@@ -1,17 +1,17 @@
-mailchimp-lite [![Build Status](http://img.shields.io/travis/NickTomlin/mailchimp-lite/master.svg?style=flat)](https://travis-ci.org/NickTomlin/mailchimp-lite) ![NPM package](https://img.shields.io/npm/v/mailchimp-lite.svg) [![Join the chat at https://gitter.im/NickTomlin/mailchimp-lite](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/NickTomlin/mailchimp-lite?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+mailchimp-bluebird [![Build Status](http://img.shields.io/travis/waawal/mailchimp-bluebird/master.svg?style=flat)](https://travis-ci.org/waawal/mailchimp-bluebird) ![NPM package](https://img.shields.io/npm/v/mailchimp-bluebird.svg) [![Join the chat at https://gitter.im/waawal/mailchimp-bluebird](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/waawal/mailchimp-bluebird?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ===
 
 A lightweight wrapper for Mailchimp's [v2](https://apidocs.mailchimp.com/api/2.0/) and [v3](http://kb.mailchimp.com/api/?utm_source=apidocs&utm_medium=internal_ad&utm_campaign=api_v3) apis.
 
 ``` shell
-npm i mailchimp-lite --save
+npm i mailchimp-bluebird --save
 ```
 
 Usage
 ---
 
 ```javascript
-let Mailchimp = require('mailchimp-lite');
+let Mailchimp = require('mailchimp-bluebird');
 
 let mailchimp = new Mailchimp({
   key: process.env.MAILCHIMP_API_KEY,
